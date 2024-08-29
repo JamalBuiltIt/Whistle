@@ -1,0 +1,16 @@
+/* src/components/Header.css */
+  
+  .profile-icon {
+    position: absolute;
+    cursor: pointer;
+    background: linear-gradient(100deg, #ff6f61, #d83a56);
+    border-radius: 20px;
+    bottom: 760px;
+    left: 25px;
+    font-size: 25px;
+    };
+  
+  .profile-icon:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  

@@ -1,0 +1,49 @@
+/* src/components/ChatMessage.css */
+
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .message.sent {
+    justify-content: flex-end;
+  }
+  
+  .message.received {
+    justify-content: flex-start;
+  }
+  
+  .message img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .message.sent img {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+  
+  .message p {
+    background: linear-gradient(100deg, #ff6f61, #d83a56);;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 70%;
+  }
+  
+  .message.received p {
+    background: #e0e0e0;
+    color: #333;
+  }
+
+  .container {
+   position: relative;
+   left: 100px;
+   justify-content: center;
+   align-items: center;
+  }
+  
+

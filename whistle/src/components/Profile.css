@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle at top left, #e2e2e2, #ffffff);
+    overflow: hidden;
+  }
+  
+  /* Profile Container */
+  .profile-container {
+    position: relative;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 7px 14px #ff6f61;
+    max-width: 600px;
+    margin: 80px auto;
+    text-align: center;
+    animation: fadeIn 1s ease-out, slideUp 1s ease-out;
+    border: 1px solid linear-gradient(100deg, #ff6f61, #d83a56); /* Adding a border for additional emphasis */
+  }
+  
+  /* Profile Photo */
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid;
+    border-color: #d83a56;
+    box-shadow: 0 12px 24px #ff6f61;
+    animation: pulse 2s infinite, rotate 10s linear infinite; /* Adding a rotating effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .profile-photo:hover {
+    transform: scale(1.1) rotate(10deg); /* Slightly rotate and scale */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); /* Increased shadow on hover */
+  }
+  
+  /* Bio Section */
+  .profile-bio {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+    animation: fadeIn 1s ease-in-out, slideUp 1s ease-out;
+  }
+  
+  /* File Input */
+  .file-input {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid #d83a56;
+    border-radius: 8px;
+    background: #f7f9fc;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .file-input:hover {
+    border-color: #d83a56;
+    background-color: #e3f2fd;
+  }
+  
+  /* Bio Input */
+  .bio-input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 10px auto;
+    border: 2px solid #ff6f61;
+    border-radius: 8px;
+    font-size: 1.1em;
+    color: #333;
+    background: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .bio-input:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Adding shadow on focus */
+    outline: none;
+  }
+  
+  /* Update Button */
+  .update-button {
+    padding: 12px 24px;
+    margin: 20px 0;
+    background: linear-gradient(100deg, #ff6f61, #d83a56);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .update-button:hover {
+    background: linear-gradient(135deg, #2980b9, #3498db);
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adding shadow on hover */
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
