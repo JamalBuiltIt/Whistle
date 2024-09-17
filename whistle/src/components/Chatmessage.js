@@ -2,8 +2,10 @@ import React, { useState, useContext } from 'react';
 import UserContext from '../components/UserContext'; // Ensure the path is correct
 import UserProfile from '../components/userProfile'; // Ensure the path is correct
 import './ChatMessage.css';
+import { useNavigate } from 'react-router-dom';
 
 function ChatMessage({ message }) {
+  const navigate = useNavigate();
   const { text, uid } = message;
   const { userInfo } = useContext(UserContext);
   const [showProfile, setShowProfile] = useState(false); // State to control profile visibility
@@ -12,7 +14,7 @@ function ChatMessage({ message }) {
 
   // Function to toggle the profile view
   const handleProfileClick = () => {
-    setShowProfile(prevState => !prevState); // Toggle profile visibility
+    navigate('/profile');
   };
 
   return (

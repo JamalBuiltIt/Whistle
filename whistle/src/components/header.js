@@ -13,7 +13,9 @@ function Header({ onProfileClick }) {
   const navigate = useNavigate();
 
   const handleProfileClick = () => {
-    // Trigger the profile click handler passed from the parent
+   
+    navigate('/userProfile');
+
     onProfileClick();
   };
 

@@ -62,7 +62,7 @@ function Profile() {
         alt="Profile"
         className="profile-photo"
       />
-      <p className="profile-bio">{userInfo?.bio || 'No bio available'}</p>
+      <p className="le-bio">{userInfo?.bio || 'No bio available'}</p>
       <input
         type="file"
         id="profile-photo"
